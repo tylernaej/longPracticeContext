@@ -1,5 +1,8 @@
 function callOnTarget(func, obj1, obj2) {
-  // Your code here
+  //we need to use call because the prompt is asking us to return a result
+  //call will return the invoked funcs result.
+  const an = func.call(obj1,obj2)
+  return an
 }
 
 

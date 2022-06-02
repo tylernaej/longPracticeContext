@@ -7,7 +7,7 @@ chai.use(spies);
 const boundFuncTimer = require("../problems/11-bind-set-time-out");
 
 describe("boundFuncTimer", function () {
-  it("should invoke the sayHello method after a specified time", function (done) {
+  it("should invoke the typo method after a specified time", function (done) {
     let startTime = new Date();
     let msecs = 500;
 

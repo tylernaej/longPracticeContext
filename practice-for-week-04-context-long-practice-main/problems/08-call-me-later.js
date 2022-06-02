@@ -15,7 +15,6 @@ class CallCenter {
   }
 
   sayHello() {
-    console.log(this);
     console.log(`Hello this is ${this.name}`);
   }
 
@@ -30,6 +29,7 @@ class CallCenter {
     //setTimeout(this.sayHello.bind(this, null), delay);
   }
 }
+
 
 // let judy = new CallCenter("Judy");
 // judy.sayHello();         // prints "Hello this is Judy"
