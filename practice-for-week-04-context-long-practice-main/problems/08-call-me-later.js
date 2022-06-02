@@ -15,19 +15,25 @@ class CallCenter {
   }
 
   sayHello() {
-    //console.log(this);
+    console.log(this);
     console.log(`Hello this is ${this.name}`);
   }
 
   callMeLater(delay) {
-	  //we need to use anonymous func for setTimeout to keep the Callcenter context
-	  //otherwise, the context is the Timeout obj
+    //we need to use anonymous func for setTimeout to keep the Callcenter context
+    //otherwise, the context is the Timeout obj
     setTimeout(() => {
       this.sayHello();
     }, delay);
+
+	//USE BIND BELOW
+    //setTimeout(this.sayHello.bind(this, null), delay);
   }
 }
 
+// let judy = new CallCenter("Judy");
+// judy.sayHello();         // prints "Hello this is Judy"
+// judy.callMeLater(1000);  // waits one second then prints "Hello this is Judy"
 /*****************************************************************************/
 /***************** DO NOT MODIFY ANYTHING UNDER THIS LINE ********************/
 
