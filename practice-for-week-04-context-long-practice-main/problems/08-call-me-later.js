@@ -26,7 +26,7 @@ class CallCenter {
       this.sayHello();
     }, delay);
 
-	//USE BIND BELOW
+	//USE BIND
     //setTimeout(this.sayHello.bind(this, null), delay);
   }
 }
